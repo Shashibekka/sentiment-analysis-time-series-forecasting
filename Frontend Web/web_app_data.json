@@ -1,0 +1,314 @@
+{
+  "metadata": {
+    "analysis_timestamp": "2025-06-25T18:01:30.570759",
+    "datasets_used": {
+      "twitter_train_size": 60861,
+      "twitter_validation_size": 828,
+      "stock_data_size": 1258
+    }
+  },
+  "sentiment_analysis": {
+    "total_tweets": 828,
+    "sentiment_distribution": {
+      "Neutral": "285",
+      "Positive": "277",
+      "Negative": "266"
+    },
+    "company_distribution": {
+      "RedDeadRedemption(RDR)": "38",
+      "johnson&johnson": "36",
+      "TomClancysRainbowSix": "34",
+      "ApexLegends": "33",
+      "Nvidia": "33",
+      "AssassinsCreed": "32",
+      "LeagueOfLegends": "31",
+      "PlayStation5(PS5)": "31",
+      "Borderlands": "31",
+      "Amazon": "31"
+    },
+    "model_performance": {
+      "Naive Bayes": {
+        "accuracy": 0.7167971959033901
+      },
+      "Logistic Regression": {
+        "accuracy": 0.7586943425160195
+      },
+      "Random Forest": {
+        "accuracy": 0.5818500465523851
+      }
+    },
+    "best_model": {
+      "name": "Logistic Regression",
+      "accuracy": 0.7586943425160195
+    },
+    "sample_analyses": [
+      {
+        "tweet": "BBC News - Amazon boss Jeff Bezos rejects claims company acted like a 'drug dealer' bbc.co.uk/news/a...",
+        "actual": "Neutral",
+        "company": "Amazon",
+        "textblob": {
+          "prediction": "Neutral",
+          "score": 0.0
+        },
+        "vader": {
+          "prediction": "Neutral",
+          "score": -0.0
+        },
+        "ml": {
+          "prediction": "Neutral",
+          "confidence": 0.886
+        }
+      },
+      {
+        "tweet": "@Microsoft Why do I pay for WORD when it functions so poorly on my @SamsungUS Chromebook? \ud83d\ude44",
+        "actual": "Negative",
+        "company": "Microsoft",
+        "textblob": {
+          "prediction": "Negative",
+          "score": -0.4
+        },
+        "vader": {
+          "prediction": "Negative",
+          "score": -0.103
+        },
+        "ml": {
+          "prediction": "Negative",
+          "confidence": 0.79
+        }
+      },
+      {
+        "tweet": "CSGO matchmaking is so full of closet hacking, it's a truly awful game.",
+        "actual": "Negative",
+        "company": "CS-GO",
+        "textblob": {
+          "prediction": "Negative",
+          "score": -0.35
+        },
+        "vader": {
+          "prediction": "Neutral",
+          "score": -0.026
+        },
+        "ml": {
+          "prediction": "Negative",
+          "confidence": 0.902
+        }
+      },
+      {
+        "tweet": "Now the President is slapping Americans in the face that he really did commit an unlawful act after ...",
+        "actual": "Neutral",
+        "company": "Google",
+        "textblob": {
+          "prediction": "Positive",
+          "score": 0.2
+        },
+        "vader": {
+          "prediction": "Positive",
+          "score": 0.357
+        },
+        "ml": {
+          "prediction": "Neutral",
+          "confidence": 0.888
+        }
+      },
+      {
+        "tweet": "Hi @EAHelp I\u2019ve had Madeleine McCann in my cellar for the past 13 years and the little sneaky thing ...",
+        "actual": "Negative",
+        "company": "FIFA",
+        "textblob": {
+          "prediction": "Negative",
+          "score": -0.219
+        },
+        "vader": {
+          "prediction": "Positive",
+          "score": 0.862
+        },
+        "ml": {
+          "prediction": "Negative",
+          "confidence": 0.916
+        }
+      },
+      {
+        "tweet": "Thank you @EAMaddenNFL!! \n\nNew TE Austin Hooper in the ORANGE & BROWN!! \n\n#Browns | @AustinHooper18 ...",
+        "actual": "Positive",
+        "company": "MaddenNFL",
+        "textblob": {
+          "prediction": "Positive",
+          "score": 0.136
+        },
+        "vader": {
+          "prediction": "Positive",
+          "score": 0.361
+        },
+        "ml": {
+          "prediction": "Positive",
+          "confidence": 0.826
+        }
+      },
+      {
+        "tweet": "Rocket League, Sea of Thieves or Rainbow Six: Siege\ud83e\udd14? I love playing all three on stream but which i...",
+        "actual": "Positive",
+        "company": "TomClancysRainbowSix",
+        "textblob": {
+          "prediction": "Positive",
+          "score": 0.75
+        },
+        "vader": {
+          "prediction": "Positive",
+          "score": 0.825
+        },
+        "ml": {
+          "prediction": "Positive",
+          "confidence": 0.798
+        }
+      },
+      {
+        "tweet": "my ass still knee-deep in Assassins Creed Odyssey with no way out anytime soon lmao",
+        "actual": "Positive",
+        "company": "AssassinsCreed",
+        "textblob": {
+          "prediction": "Positive",
+          "score": 0.3
+        },
+        "vader": {
+          "prediction": "Negative",
+          "score": -0.202
+        },
+        "ml": {
+          "prediction": "Positive",
+          "confidence": 0.672
+        }
+      },
+      {
+        "tweet": "FIX IT JESUS ! Please FIX IT ! What In the world is going on here.  @PlayStation @AskPlayStation @Pl...",
+        "actual": "Negative",
+        "company": "CallOfDuty",
+        "textblob": {
+          "prediction": "Negative",
+          "score": -0.3
+        },
+        "vader": {
+          "prediction": "Negative",
+          "score": -0.625
+        },
+        "ml": {
+          "prediction": "Negative",
+          "confidence": 0.955
+        }
+      },
+      {
+        "tweet": "The professional dota 2 scene is fucking exploding and I completely welcome it.\n\nGet the garbage out...",
+        "actual": "Positive",
+        "company": "Dota2",
+        "textblob": {
+          "prediction": "Positive",
+          "score": 0.1
+        },
+        "vader": {
+          "prediction": "Positive",
+          "score": 0.509
+        },
+        "ml": {
+          "prediction": "Negative",
+          "confidence": 0.426
+        }
+      }
+    ]
+  },
+  "stock_forecasting": {
+    "stock_stats": {
+      "min_price": 491.2,
+      "max_price": 1216.83,
+      "avg_price": 712.6696661367249,
+      "latest_price": 771.82,
+      "total_records": 1258
+    },
+    "forecasting_results": {
+      "ARIMA": {
+        "next_5_days": [
+          750.2730410139776,
+          750.3689294404087,
+          750.5444041089318,
+          750.6630664066296,
+          750.7827101307606
+        ],
+        "full_forecast": [
+          750.2730410139776,
+          750.3689294404087,
+          750.5444041089318,
+          750.6630664066296,
+          750.7827101307606,
+          750.8825935233267,
+          750.9733093851702,
+          751.0525725494081,
+          751.1230549170192,
+          751.1852295067063,
+          751.2402756995901,
+          751.2889299737827,
+          751.3319670566777,
+          751.3700223631197,
+          751.4036778336616,
+          751.4334400399355,
+          751.4597602098833,
+          751.4830360748961,
+          751.5036198911749,
+          751.5218229608472,
+          751.5379206661519,
+          751.5521565041643,
+          751.564745822878,
+          751.5758790575089,
+          751.5857246197363,
+          751.5944314417997,
+          751.6021312307641,
+          751.6089404602775,
+          751.6149621326764,
+          751.6202873369989
+        ],
+        "aic": 9485.679672257236,
+        "order": "(2, 1, 2)"
+      },
+      "SARIMA": {
+        "next_5_days": [
+          751.1219323855703,
+          753.0374794232964,
+          751.9622301655538,
+          752.6546266486189,
+          753.7529969660071
+        ],
+        "full_forecast": [
+          751.1219323855703,
+          753.0374794232964,
+          751.9622301655538,
+          752.6546266486189,
+          753.7529969660071,
+          755.2923380267817,
+          756.4942410442032,
+          755.8746298555516,
+          749.3746944980938,
+          749.7500894139097,
+          751.7253900901236,
+          752.3804482737459,
+          753.3414748694728,
+          755.0835069768905,
+          753.8532884954413,
+          754.3930920307963,
+          755.4006618315166,
+          756.8776243614342,
+          758.0290172728422,
+          757.3512376526563,
+          750.6733025984913,
+          750.9639715132954,
+          752.9505725176236,
+          753.5415613793551,
+          754.4715333768055,
+          756.1874393491626,
+          754.9349599275181,
+          755.4556963461185,
+          756.4473245863255,
+          757.910837007001
+        ],
+        "aic": 9432.58834893565,
+        "order": "(1, 1, 1)x(1, 1, 1, 12)"
+      }
+    }
+  }
+}

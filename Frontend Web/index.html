@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Sentiment Analysis & Stock Forecasting Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="container">
+            <h1>Financial Analysis Dashboard</h1>
+            <p>Sentiment Analysis and Stock Price Forecasting</p>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="container">
+            <!-- Summary Stats -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <h3 id="totalTweets">828</h3>
+                        <p>Tweets Analyzed</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <h3 id="modelAccuracy">60.2%</h3>
+                        <p>Model Accuracy</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <h3 id="stockRecords">1,258</h3>
+                        <p>Stock Records</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <h3 id="modelsTrained">5</h3>
+                        <p>Models Trained</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analysis Sections -->
+            <div class="analysis-grid">
+                <!-- Sentiment Analysis Section -->
+                <section class="analysis-card">
+                    <div class="card-header">
+                        <h2>Sentiment Analysis Results</h2>
+                        <span class="badge">Twitter Data</span>
+                    </div>
+                    <div class="card-content">
+                        <!-- Sentiment Distribution Chart -->
+                        <div class="chart-container">
+                            <canvas id="sentimentChart"></canvas>
+                        </div>
+                        
+                        <!-- Model Performance -->
+                        <div class="model-performance">
+                            <h3>Model Performance</h3>
+                            <div id="modelResults" class="model-grid">
+                                <!-- Dynamic content will be inserted here -->
+                            </div>
+                        </div>
+
+                        <!-- Sample Analysis -->
+                        <div class="sample-analysis">
+                            <h3>Sample Tweet Analysis</h3>
+                            <div id="sampleTweets" class="sample-grid">
+                                <!-- Dynamic content will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stock Forecasting Section -->
+                <section class="analysis-card">
+                    <div class="card-header">
+                        <h2>Stock Price Forecasting</h2>
+                        <span class="badge">Google Stock Data</span>
+                    </div>
+                    <div class="card-content">
+                        <!-- Stock Price Chart -->
+                        <div class="chart-container">
+                            <canvas id="stockChart"></canvas>
+                        </div>
+
+                        <!-- Forecasting Results -->
+                        <div class="forecast-results">
+                            <h3>ARIMA & SARIMA Forecasts</h3>
+                            <div id="forecastResults" class="forecast-grid">
+                                <!-- Dynamic content will be inserted here -->
+                            </div>
+                        </div>
+
+                        <!-- Stock Statistics -->
+                        <div class="stock-stats">
+                            <h3>Stock Statistics</h3>
+                            <div id="stockStats" class="stats-table">
+                                <!-- Dynamic content will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Company Analysis -->
+            <section class="company-section">
+                <div class="card-header">
+                    <h2>Company Sentiment Distribution</h2>
+                </div>
+                <div class="company-grid" id="companyAnalysis">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+            </section>
+
+            <!-- Real-time Updates -->
+            <section class="updates-section">
+                <div class="card-header">
+                    <h2>Analysis Updates</h2>
+                </div>
+                <div class="updates-feed" id="updatesFeed">
+                    <!-- Dynamic updates will be inserted here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="dashboard-footer">
+        <div class="container">
+            <p>&copy; 2025 Financial Analysis Dashboard. Powered by Twitter & Google Stock Data.</p>
+            <div class="footer-links">
+                <span>Last Updated: <span id="lastUpdated">--</span></span>
+                <span>•</span>
+                <span>Data Sources: Twitter API, Google Finance</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
